@@ -1,0 +1,2595 @@
+{
+  "WisdM6": {
+    "id": "WisdM6",
+    "key": "generic-session",
+    "name": "Active on Site",
+    "created": "2024-01-16T21:21:13Z",
+    "updated": "2024-01-16T21:21:13Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "api",
+    "value_name": "Active on Site Value"
+  },
+  "Xwsh4p": {
+    "id": "Xwsh4p",
+    "key": "Added to Cart",
+    "name": "Added to Cart",
+    "created": "2024-02-02T16:30:45Z",
+    "updated": "2024-02-02T16:30:45Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Added to Cart Value"
+  },
+  "XkGLKR": {
+    "id": "XkGLKR",
+    "key": "BirthdaySet",
+    "name": "BirthdaySet",
+    "created": "2025-04-16T03:55:05Z",
+    "updated": "2025-04-16T03:55:05Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "BirthdaySet Value"
+  },
+  "XpP4mU": {
+    "id": "XpP4mU",
+    "key": "Email bounce",
+    "name": "Bounced Email",
+    "created": "2024-01-16T21:21:42Z",
+    "updated": "2024-01-16T21:21:42Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Bounced Email Value"
+  },
+  "TXCxZn": {
+    "id": "TXCxZn",
+    "key": "Order cancelled",
+    "name": "Cancelled Order",
+    "created": "2024-01-16T21:21:12Z",
+    "updated": "2024-01-16T21:21:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Cancelled Order Value"
+  },
+  "XNyDBD": {
+    "id": "XNyDBD",
+    "key": "Cancelled Subscription",
+    "name": "Cancelled Subscription",
+    "created": "2024-02-07T23:37:02Z",
+    "updated": "2024-02-07T23:37:02Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Cancelled Subscription Value"
+  },
+  "RybBSg": {
+    "id": "RybBSg",
+    "key": "Checkout Started",
+    "name": "Checkout Started",
+    "created": "2024-01-16T21:21:12Z",
+    "updated": "2024-01-16T21:21:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Checkout Started Value"
+  },
+  "S6zq9v": {
+    "id": "S6zq9v",
+    "key": "Email click",
+    "name": "Clicked Email",
+    "created": "2024-01-16T21:21:13Z",
+    "updated": "2024-01-16T21:21:13Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Clicked Email Value"
+  },
+  "S2xpQt": {
+    "id": "S2xpQt",
+    "key": "Email unsubscribe",
+    "name": "Clicked email to unsubscribe",
+    "created": "2024-01-16T21:21:42Z",
+    "updated": "2024-03-29T18:38:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Clicked email to unsubscribe Value"
+  },
+  "Sj3r5w": {
+    "id": "Sj3r5w",
+    "key": "$clicked_sms",
+    "name": "Clicked SMS",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Clicked SMS Value"
+  },
+  "TJHLGQ": {
+    "id": "TJHLGQ",
+    "key": "Confirmed Shipment",
+    "name": "Confirmed Shipment",
+    "created": "2024-01-16T23:11:15Z",
+    "updated": "2024-01-16T23:11:15Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Confirmed Shipment Value"
+  },
+  "S9hjG8": {
+    "id": "S9hjG8",
+    "key": "Coupon Assigned",
+    "name": "Coupon Assigned",
+    "created": "2024-01-18T01:47:51Z",
+    "updated": "2024-01-18T01:47:51Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Coupon Assigned Value"
+  },
+  "Wpy3b4": {
+    "id": "Wpy3b4",
+    "key": "CouponExpired",
+    "name": "CouponExpired",
+    "created": "2025-07-14T21:53:17Z",
+    "updated": "2025-07-14T21:53:17Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "CouponExpired Value"
+  },
+  "XaDhmy": {
+    "id": "XaDhmy",
+    "key": "Delivered Shipment",
+    "name": "Delivered Shipment",
+    "created": "2024-01-16T21:27:35Z",
+    "updated": "2024-01-16T21:27:35Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Delivered Shipment Value"
+  },
+  "RpwmdQ": {
+    "id": "RpwmdQ",
+    "key": "Email dropped",
+    "name": "Dropped Email",
+    "created": "2024-01-16T21:21:42Z",
+    "updated": "2024-01-16T21:21:42Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Dropped Email Value"
+  },
+  "Rj7Bu3": {
+    "id": "Rj7Bu3",
+    "key": "EarnAccountAnniversary",
+    "name": "EarnAccountAnniversary",
+    "created": "2025-03-16T00:00:18Z",
+    "updated": "2025-03-16T00:00:18Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnAccountAnniversary Value"
+  },
+  "RtkJNT": {
+    "id": "RtkJNT",
+    "key": "EarnAccountBirthday",
+    "name": "EarnAccountBirthday",
+    "created": "2024-06-06T00:02:12Z",
+    "updated": "2024-06-06T00:02:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "api",
+    "value_name": "EarnAccountBirthday Value"
+  },
+  "RFkv4a": {
+    "id": "RFkv4a",
+    "key": "EarnAccountNew",
+    "name": "EarnAccountNew",
+    "created": "2024-03-15T04:32:29Z",
+    "updated": "2024-03-15T04:32:29Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnAccountNew Value"
+  },
+  "XRXGVK": {
+    "id": "XRXGVK",
+    "key": "EarnNewsletter",
+    "name": "EarnNewsletter",
+    "created": "2024-03-15T04:57:29Z",
+    "updated": "2024-03-15T04:57:29Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "api",
+    "value_name": "EarnNewsletter Value"
+  },
+  "Rh7Fhc": {
+    "id": "Rh7Fhc",
+    "key": "EarnOrderCount",
+    "name": "EarnOrderCount",
+    "created": "2024-03-15T16:27:17Z",
+    "updated": "2024-03-15T16:27:17Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnOrderCount Value"
+  },
+  "R4jsrx": {
+    "id": "R4jsrx",
+    "key": "EarnOrderNew",
+    "name": "EarnOrderNew",
+    "created": "2024-03-15T04:32:33Z",
+    "updated": "2024-03-15T04:32:33Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnOrderNew Value"
+  },
+  "SrEZuH": {
+    "id": "SrEZuH",
+    "key": "EarnPhotoReview",
+    "name": "EarnPhotoReview",
+    "created": "2025-07-01T13:56:16Z",
+    "updated": "2025-07-01T13:56:16Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnPhotoReview Value"
+  },
+  "VtyYL7": {
+    "id": "VtyYL7",
+    "key": "EarnReview",
+    "name": "EarnReview",
+    "created": "2024-03-15T16:38:03Z",
+    "updated": "2024-03-15T16:38:03Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnReview Value"
+  },
+  "QQniHk": {
+    "id": "QQniHk",
+    "key": "EarnReviewPhoto",
+    "name": "EarnReviewPhoto",
+    "created": "2024-04-18T04:46:18Z",
+    "updated": "2024-04-18T04:46:18Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "api",
+    "value_name": "EarnReviewPhoto Value"
+  },
+  "VubdqW": {
+    "id": "VubdqW",
+    "key": "EarnSocialFollowFacebook",
+    "name": "EarnSocialFollowFacebook",
+    "created": "2024-03-16T00:13:15Z",
+    "updated": "2024-03-16T00:13:15Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnSocialFollowFacebook Value"
+  },
+  "RWrWk8": {
+    "id": "RWrWk8",
+    "key": "EarnSocialFollowInstagram",
+    "name": "EarnSocialFollowInstagram",
+    "created": "2024-03-16T05:05:47Z",
+    "updated": "2024-03-16T05:05:47Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnSocialFollowInstagram Value"
+  },
+  "UbkCDN": {
+    "id": "UbkCDN",
+    "key": "EarnSocialFollowTiktok",
+    "name": "EarnSocialFollowTiktok",
+    "created": "2025-04-22T15:35:38Z",
+    "updated": "2025-04-22T15:35:38Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "EarnSocialFollowTiktok Value"
+  },
+  "R4ZjQg": {
+    "id": "R4ZjQg",
+    "key": "$failed_automated_response_sms_send",
+    "name": "Failed to Deliver Automated Response SMS",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Failed to Deliver Automated Response SMS Value"
+  },
+  "VTTc6u": {
+    "id": "VTTc6u",
+    "key": "$failed_sms_send",
+    "name": "Failed to Deliver SMS",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Failed to Deliver SMS Value"
+  },
+  "UTb5FU": {
+    "id": "UTb5FU",
+    "key": "Form completed by profile",
+    "name": "Form completed by profile",
+    "created": "2024-05-07T22:18:44Z",
+    "updated": "2024-05-07T22:18:44Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "api",
+    "value_name": "Form completed by profile Value"
+  },
+  "R475fL": {
+    "id": "R475fL",
+    "key": "Form submitted by profile",
+    "name": "Form submitted by profile",
+    "created": "2024-05-10T16:13:25Z",
+    "updated": "2024-05-10T16:13:25Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "api",
+    "value_name": "Form submitted by profile Value"
+  },
+  "VL4rvR": {
+    "id": "VL4rvR",
+    "key": "Order fulfilled",
+    "name": "Fulfilled Order",
+    "created": "2024-01-16T21:21:12Z",
+    "updated": "2024-01-16T21:21:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Fulfilled Order Value"
+  },
+  "UNh7ud": {
+    "id": "UNh7ud",
+    "key": "Fulfilled Partial Order",
+    "name": "Fulfilled Partial Order",
+    "created": "2024-01-16T21:23:31Z",
+    "updated": "2024-01-16T21:23:31Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Fulfilled Partial Order Value"
+  },
+  "UVHvPf": {
+    "id": "UVHvPf",
+    "key": "Loop Billing Attempt Failed",
+    "name": "Loop Billing Attempt Failed",
+    "created": "2024-04-19T14:52:44Z",
+    "updated": "2024-04-19T14:52:44Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Billing Attempt Failed Value"
+  },
+  "VyJyrS": {
+    "id": "VyJyrS",
+    "key": "Loop Billing Attempt Failed and Last Retry Left",
+    "name": "Loop Billing Attempt Failed and Last Retry Left",
+    "created": "2024-04-19T14:52:44Z",
+    "updated": "2024-04-19T14:52:44Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Billing Attempt Failed and Last Retry Left Value"
+  },
+  "WbKB4v": {
+    "id": "WbKB4v",
+    "key": "Loop Billing Attempt Failed and will be Retried",
+    "name": "Loop Billing Attempt Failed and will be Retried",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Billing Attempt Failed and will be Retried Value"
+  },
+  "WJ9pjJ": {
+    "id": "WJ9pjJ",
+    "key": "Loop Customer Account Activation",
+    "name": "Loop Customer Account Activation",
+    "created": "2024-04-19T14:52:44Z",
+    "updated": "2024-04-19T14:52:44Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Customer Account Activation Value"
+  },
+  "UiGtcC": {
+    "id": "UiGtcC",
+    "key": "Loop Flow Completed",
+    "name": "Loop Flow Completed",
+    "created": "2024-04-19T14:52:44Z",
+    "updated": "2024-04-19T14:52:44Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Loop Flow Completed Value"
+  },
+  "UpjHy2": {
+    "id": "UpjHy2",
+    "key": "Loop Order Out Of Stock",
+    "name": "Loop Order Out Of Stock",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Order Out Of Stock Value"
+  },
+  "QNtWx4": {
+    "id": "QNtWx4",
+    "key": "Loop Order Processed",
+    "name": "Loop Order Processed",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Order Processed Value"
+  },
+  "TdUSEa": {
+    "id": "TdUSEa",
+    "key": "Loop Order Skipped",
+    "name": "Loop Order Skipped",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Order Skipped Value"
+  },
+  "RTfx5w": {
+    "id": "RTfx5w",
+    "key": "Loop Payment Method Expiring",
+    "name": "Loop Payment Method Expiring",
+    "created": "2024-04-19T14:52:44Z",
+    "updated": "2024-04-19T14:52:44Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Payment Method Expiring Value"
+  },
+  "Y8Vxzv": {
+    "id": "Y8Vxzv",
+    "key": "Loop Send Customer Login Link",
+    "name": "Loop Send Customer Login Link",
+    "created": "2024-07-23T19:14:46Z",
+    "updated": "2024-07-23T19:14:46Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Send Customer Login Link Value"
+  },
+  "WgnRpT": {
+    "id": "WgnRpT",
+    "key": "Loop Subscription Cancelled",
+    "name": "Loop Subscription Cancelled",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Cancelled Value"
+  },
+  "VrhApN": {
+    "id": "VrhApN",
+    "key": "Loop Subscription Delayed",
+    "name": "Loop Subscription Delayed",
+    "created": "2024-08-28T22:51:16Z",
+    "updated": "2024-08-28T22:51:16Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Delayed Value"
+  },
+  "VDmNMg": {
+    "id": "VDmNMg",
+    "key": "Loop Subscription Expired",
+    "name": "Loop Subscription Expired",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Loop Subscription Expired Value"
+  },
+  "VRcjrW": {
+    "id": "VRcjrW",
+    "key": "Loop Subscription Lines Changed",
+    "name": "Loop Subscription Lines Changed",
+    "created": "2025-06-27T19:06:57Z",
+    "updated": "2025-06-27T19:06:57Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Lines Changed Value"
+  },
+  "SFx6nV": {
+    "id": "SFx6nV",
+    "key": "Loop Subscription Paused",
+    "name": "Loop Subscription Paused",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Paused Value"
+  },
+  "Y4NJUn": {
+    "id": "Y4NJUn",
+    "key": "Loop Subscription Reactivated",
+    "name": "Loop Subscription Reactivated",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Reactivated Value"
+  },
+  "Vd3hRj": {
+    "id": "Vd3hRj",
+    "key": "Loop Subscription Rescheduled",
+    "name": "Loop Subscription Rescheduled",
+    "created": "2024-08-25T10:55:51Z",
+    "updated": "2024-08-25T10:55:51Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Rescheduled Value"
+  },
+  "UtWXTq": {
+    "id": "UtWXTq",
+    "key": "Loop Subscription Resumed",
+    "name": "Loop Subscription Resumed",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Resumed Value"
+  },
+  "QT7cSs": {
+    "id": "QT7cSs",
+    "key": "Loop Subscription Started",
+    "name": "Loop Subscription Started",
+    "created": "2024-04-19T14:52:42Z",
+    "updated": "2024-04-19T14:52:42Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Subscription Started Value"
+  },
+  "XrMGhK": {
+    "id": "XrMGhK",
+    "key": "Loop Upcoming Order",
+    "name": "Loop Upcoming Order",
+    "created": "2024-04-19T14:52:43Z",
+    "updated": "2024-04-19T14:52:43Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+      "name": "Loop Subscriptions",
+      "category": {
+        "id": 25,
+        "category": "Subscriptions"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "01HVRHQ1E9960PPZK6BPV8W5X1",
+    "value_name": "Loop Upcoming Order Value"
+  },
+  "SNMCyF": {
+    "id": "SNMCyF",
+    "key": "$suppression_added",
+    "name": "Manually Suppressed from Email Marketing",
+    "created": "2024-01-18T01:13:48Z",
+    "updated": "2024-01-18T01:13:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Manually Suppressed from Email Marketing Value"
+  },
+  "VBpaRr": {
+    "id": "VBpaRr",
+    "key": "Marked email as spam",
+    "name": "Marked Email as Spam",
+    "created": "2024-01-16T21:21:42Z",
+    "updated": "2024-01-16T21:21:42Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Marked Email as Spam Value"
+  },
+  "UptNJM": {
+    "id": "UptNJM",
+    "key": "Marked Out for Delivery",
+    "name": "Marked Out for Delivery",
+    "created": "2024-01-17T05:52:30Z",
+    "updated": "2024-01-17T05:52:30Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Marked Out for Delivery Value"
+  },
+  "RqDvpa": {
+    "id": "RqDvpa",
+    "key": "$merged_profile",
+    "name": "Merged Profile",
+    "created": "2024-05-15T13:51:22Z",
+    "updated": "2024-05-15T13:51:22Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Merged Profile Value"
+  },
+  "SCXcqJ": {
+    "id": "SCXcqJ",
+    "key": "Email open",
+    "name": "Opened Email",
+    "created": "2024-01-16T21:21:15Z",
+    "updated": "2024-01-16T21:21:15Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Opened Email Value"
+  },
+  "YbvmCX": {
+    "id": "YbvmCX",
+    "key": "$ordered_product",
+    "name": "Ordered Product",
+    "created": "2024-01-16T21:21:12Z",
+    "updated": "2024-01-16T21:21:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Ordered Product Value"
+  },
+  "RHNmtd": {
+    "id": "RHNmtd",
+    "key": "Paused Subscription",
+    "name": "Paused Subscription",
+    "created": "2024-02-13T20:45:04Z",
+    "updated": "2024-02-13T20:45:04Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Paused Subscription Value"
+  },
+  "SbcEuT": {
+    "id": "SbcEuT",
+    "key": "Order",
+    "name": "Placed Order",
+    "created": "2024-01-16T21:21:12Z",
+    "updated": "2024-01-16T21:21:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value_name": "Revenue",
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Revenue"
+  },
+  "SF6d8R": {
+    "id": "SF6d8R",
+    "key": "PointsExpired",
+    "name": "PointsExpired",
+    "created": "2025-03-16T00:27:47Z",
+    "updated": "2025-03-16T00:27:47Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "PointsExpired Value"
+  },
+  "U9SprX": {
+    "id": "U9SprX",
+    "key": "PurchasedWithReward",
+    "name": "PurchasedWithReward",
+    "created": "2025-03-07T05:54:53Z",
+    "updated": "2025-03-07T05:54:53Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "PurchasedWithReward Value"
+  },
+  "X5i2Yk": {
+    "id": "X5i2Yk",
+    "key": "$received_automated_response_sms",
+    "name": "Received Automated Response SMS",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Received Automated Response SMS Value"
+  },
+  "Urp5Vd": {
+    "id": "Urp5Vd",
+    "key": "Email delivered",
+    "name": "Received Email",
+    "created": "2024-01-16T21:21:15Z",
+    "updated": "2024-01-16T21:21:15Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Received Email Value"
+  },
+  "Yjk8dA": {
+    "id": "Yjk8dA",
+    "key": "$received_sms",
+    "name": "Received SMS",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Received SMS Value"
+  },
+  "Xyuj2k": {
+    "id": "Xyuj2k",
+    "key": "$refunded_order",
+    "name": "Refunded Order",
+    "created": "2024-01-16T21:21:12Z",
+    "updated": "2024-01-16T21:21:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0eMvjm",
+      "key": "shopify",
+      "category": 2,
+      "name": "Shopify",
+      "data": {
+        "docs": {
+          "text": "Getting Started Guide",
+          "link": "https://help.klaviyo.com/hc/en-us/articles/115005080407-Integrate-with-Shopify"
+        },
+        "logo_url": "https://klaviyo.s3.amazonaws.com/assets/integrations/shopify.svg"
+      }
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "shopify",
+    "value_name": "Refunded Order Value"
+  },
+  "YneThw": {
+    "id": "YneThw",
+    "key": "RefundOrder",
+    "name": "RefundOrder",
+    "created": "2025-03-08T00:52:42Z",
+    "updated": "2025-03-08T00:52:42Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "RefundOrder Value"
+  },
+  "TS8EzS": {
+    "id": "TS8EzS",
+    "key": "$relayed_sms",
+    "name": "Relayed SMS",
+    "created": "2025-04-07T04:13:42Z",
+    "updated": "2025-04-07T04:13:42Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Relayed SMS Value"
+  },
+  "R2LcYx": {
+    "id": "R2LcYx",
+    "key": "$flow_removed_from_list",
+    "name": "Removed from List",
+    "created": "2025-04-17T06:22:32Z",
+    "updated": "2025-04-17T06:22:32Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Removed from List Value"
+  },
+  "R3T9eb": {
+    "id": "R3T9eb",
+    "key": "Renewed Subscription",
+    "name": "Renewed Subscription",
+    "created": "2024-02-08T00:03:14Z",
+    "updated": "2024-02-08T00:03:14Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Renewed Subscription Value"
+  },
+  "SYATHf": {
+    "id": "SYATHf",
+    "key": "Resumed Subscription",
+    "name": "Resumed Subscription",
+    "created": "2024-03-26T21:04:16Z",
+    "updated": "2024-03-26T21:04:16Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Resumed Subscription Value"
+  },
+  "VgS9tR": {
+    "id": "VgS9tR",
+    "key": "$inbound_sms",
+    "name": "Sent SMS",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Sent SMS Value"
+  },
+  "U4BZAk": {
+    "id": "U4BZAk",
+    "key": "SpendRewardRedeemed",
+    "name": "SpendRewardRedeemed",
+    "created": "2024-04-05T20:54:17Z",
+    "updated": "2024-04-05T20:54:17Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "SpendRewardRedeemed Value"
+  },
+  "TRykNp": {
+    "id": "TRykNp",
+    "key": "Started Subscription",
+    "name": "Started Subscription",
+    "created": "2024-02-08T01:42:03Z",
+    "updated": "2024-02-08T01:42:03Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Started Subscription Value"
+  },
+  "VXDt2p": {
+    "id": "VXDt2p",
+    "key": "SubmittedQuestion",
+    "name": "SubmittedQuestion",
+    "created": "2025-05-06T17:17:45Z",
+    "updated": "2025-05-06T17:17:45Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "SubmittedQuestion Value"
+  },
+  "XkC8BY": {
+    "id": "XkC8BY",
+    "key": "SubmittedReview",
+    "name": "SubmittedReview",
+    "created": "2024-03-15T16:38:01Z",
+    "updated": "2024-03-15T16:38:01Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "SubmittedReview Value"
+  },
+  "YweJHE": {
+    "id": "YweJHE",
+    "key": "SubmittedReviewNegative",
+    "name": "SubmittedReviewNegative",
+    "created": "2024-03-27T19:25:20Z",
+    "updated": "2024-03-27T19:25:20Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "SubmittedReviewNegative Value"
+  },
+  "V4f8kV": {
+    "id": "V4f8kV",
+    "key": "SubmittedReviewPhoto",
+    "name": "SubmittedReviewPhoto",
+    "created": "2024-04-18T04:46:17Z",
+    "updated": "2024-04-18T04:46:17Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "SubmittedReviewPhoto Value"
+  },
+  "RkjrtU": {
+    "id": "RkjrtU",
+    "key": "SubmittedReviewPositive",
+    "name": "SubmittedReviewPositive",
+    "created": "2024-03-15T16:38:01Z",
+    "updated": "2024-03-15T16:38:01Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+      "name": "Stamped",
+      "category": {
+        "id": 8,
+        "category": "Rewards"
+      }
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "01JBBS75CVYQRTQNCWW9FSYJYN",
+    "value_name": "SubmittedReviewPositive Value"
+  },
+  "TkBvnK": {
+    "id": "TkBvnK",
+    "key": "$subscribed_to_back_in_stock",
+    "name": "Subscribed to Back in Stock",
+    "created": "2024-01-16T21:21:12Z",
+    "updated": "2024-01-16T21:21:12Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Subscribed to Back in Stock Value"
+  },
+  "Xy2M4i": {
+    "id": "Xy2M4i",
+    "key": "$consented_email_marketing",
+    "name": "Subscribed to Email Marketing",
+    "created": "2024-03-29T16:15:55Z",
+    "updated": "2024-03-29T16:15:55Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Subscribed to Email Marketing Value"
+  },
+  "XUxjp8": {
+    "id": "XUxjp8",
+    "key": "$subscribed_to_list",
+    "name": "Subscribed to List",
+    "created": "2024-01-17T06:49:30Z",
+    "updated": "2024-01-17T06:49:30Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Subscribed to List Value"
+  },
+  "TusfXn": {
+    "id": "TusfXn",
+    "key": "$consented_sms",
+    "name": "Subscribed to SMS Marketing",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Subscribed to SMS Marketing Value"
+  },
+  "UvF9a8": {
+    "id": "UvF9a8",
+    "key": "Subscription Renewal Failed",
+    "name": "Subscription Renewal Failed",
+    "created": "2024-02-08T05:26:45Z",
+    "updated": "2024-02-08T05:26:45Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {
+      "value": "$value"
+    },
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "$",
+    "value_property": "$value",
+    "service_key": "api",
+    "value_name": "Subscription Renewal Failed Value"
+  },
+  "UDRHHF": {
+    "id": "UDRHHF",
+    "key": "$list_suppression_added",
+    "name": "Suppressed from List for Email Marketing",
+    "created": "2024-05-18T08:26:23Z",
+    "updated": "2024-05-18T08:26:23Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Suppressed from List for Email Marketing Value"
+  },
+  "SMmnHv": {
+    "id": "SMmnHv",
+    "key": "$unsubscribed_email_marketing",
+    "name": "Unsubscribed from Email Marketing",
+    "created": "2024-04-03T01:05:42Z",
+    "updated": "2024-04-03T01:05:42Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Unsubscribed from Email Marketing Value"
+  },
+  "XwfQ7Q": {
+    "id": "XwfQ7Q",
+    "key": "$unsubscribed_from_list",
+    "name": "Unsubscribed from List",
+    "created": "2024-04-09T16:05:19Z",
+    "updated": "2024-04-09T16:05:19Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Unsubscribed from List Value"
+  },
+  "RG2nsT": {
+    "id": "RG2nsT",
+    "key": "$unsubscribed_sms",
+    "name": "Unsubscribed from SMS Marketing",
+    "created": "2024-01-16T21:21:48Z",
+    "updated": "2024-01-16T21:21:48Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Unsubscribed from SMS Marketing Value"
+  },
+  "X3zrU7": {
+    "id": "X3zrU7",
+    "key": "$list_suppression_removed",
+    "name": "Unsuppressed from List for Email Marketing",
+    "created": "2024-09-23T16:32:09Z",
+    "updated": "2024-09-23T16:32:09Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Unsuppressed from List for Email Marketing Value"
+  },
+  "V2izMs": {
+    "id": "V2izMs",
+    "key": "$updated_preferences",
+    "name": "Updated Email Preferences",
+    "created": "2025-05-07T11:54:04Z",
+    "updated": "2025-05-07T11:54:04Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "0rG4eQ",
+      "key": "klaviyo",
+      "category": 11,
+      "name": "Klaviyo",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "klaviyo",
+    "value_name": "Updated Email Preferences Value"
+  },
+  "TSZhDY": {
+    "id": "TSZhDY",
+    "key": "Viewed Product",
+    "name": "Viewed Product",
+    "created": "2024-01-16T21:21:14Z",
+    "updated": "2024-01-16T21:21:14Z",
+    "deleted": null,
+    "company": "Udwj3y",
+    "is_session_activity": null,
+    "definition": {},
+    "type": null,
+    "icon": "blue-star",
+    "favorite_order": null,
+    "customer_order": null,
+    "service": {
+      "id": "7FtS4J",
+      "key": "api",
+      "category": 12,
+      "name": "API",
+      "data": null
+    },
+    "prefix": "",
+    "value_property": null,
+    "service_key": "api",
+    "value_name": "Viewed Product Value"
+  }
+}
