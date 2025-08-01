@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-7-31",
+  "generalPolicies": {
+    "definitions": {
+      "peakSeason": {
+        "startDate": "nov-15",
+        "endDate": "jan-15",
+        "description": "Period with extended timelines for claims processing."
+      }
+    },
+    "reimbursement": {
+      "defaultCalculation": {
+        "primaryMethod": "wholesale",
+        "secondaryMethod": "retail"
+      },
+      "methods": {
+        "wholesale": {
+          "reimbursementPercentage": 100,
+          "proofRequired": ["supplierInvoice", "manufacturerInvoice"]
+        },
+        "retail": {
+          "reimbursementPercentage": 40,
+          "proofRequired": ["customerInvoice", "websitePrice"],
+          "notes": "Percentage is applied to final sale price, excluding shipping."
+        }
+      },
+      "specialCases": {
+        "fulfillment_fees_only": {
+          "reimbursementPercentage": 0,
+          "reimburses": ["fulfillmentFees"],
+          "description": "Only the fulfillment fees for the order are credited."
+        }
+      }
+    },
+    "universalRestrictions": [
+      "isRestrictedProduct",
+      "isPackagingNonCompliant",
+      "isThirdPartyInsured",
+      "isMinorPackagingDamage"
+    ]
+  },
+  "claimCategories": {
+    "standardOrder": {
+      "name": "Standard Order Claim",
+      "submission": {
+        "method": "SellerPortal",
+        "windowDays": 30,
+        "pddOffset": {
+          "standardBizDays": 3,
+          "peakBizDays": 5
+        }
+      },
+      "appealWindowDays": 30,
+      "claimTypes": {
+        "lostInTransit": {
+          "triggerConditions": [
+            { "type": "no_tracking_update", "scope": "domestic", "durationDays": 7, "peakDurationDays": 12 },
+            { "type": "no_tracking_update", "scope": "international", "durationDays": 21 }
+          ],
+          "requiredEvidence": ["proofOfCost"],
+          "specialProcedures": ["If portal submission fails for international, create support ticket."],
+          "retractionClause": "Credit may be reversed if delivered within 60 days of approval."
+        },
+        "deliveredButLost": {
+          "triggerConditions": [
+            { "type": "customer_report_post_delivery", "waitHours": 48 }
+          ],
+          "requiredEvidence": ["proofOfCustomerCommunication", "proofOfCost"]
+        },
+        "damaged": {
+          "triggerConditions": [
+            { "type": "customer_report_damage" }
+          ],
+          "requiredEvidence": ["proofOfProductDamage", "proofOfCustomerCommunication", "proofOfCost"]
+        },
+        "missingProduct": {
+          "triggerConditions": [
+            { "type": "customer_report_missing_item" }
+          ],
+          "requiredEvidence": ["proofOfCustomerCommunication", "proofOfCost"],
+          "reimbursementLogic": {
+            "type": "conditional",
+            "on": "errorSource",
+            "cases": {
+              "fulfillment_error": "fulfillment_fees_only",
+              "carrier_error": "defaultCalculation"
+            }
+          },
+          "exclusions": ["parcelOnlyMerchants"]
+        },
+        "incorrectProduct": {
+          "triggerConditions": [
+            { "type": "customer_report_incorrect_item" }
+          ],
+          "requiredEvidence": ["proofOfProductDamage", "proofOfCustomerCommunication", "proofOfCost"],
+          "reimbursementLogic": {
+            "type": "conditional",
+            "on": "itemOrigin",
+            "cases": {
+              "in_inventory": "defaultCalculation",
+              "not_in_inventory": "fulfillment_fees_only"
+            }
+          },
+          "exclusions": ["parcelOnlyMerchants"]
+        }
+      }
+    },
+    "removalOrder": {
+      "name": "Removal Order Claim",
+      "submission": {
+        "method": "SupportTicket",
+        "windowDays": 7,
+        "peakWindowDays": 30
+      },
+      "criticalWarning": "Shipments to Amazon FBA or other 3PLs are 'ship at own risk' if marked as delivered.",
+      "claimTypes": {
+        "shortShips": {
+          "procedure": "Create support case for inventory investigation."
+        },
+        "noTrackingMovement": {
+          "triggerConditions": [
+            { "type": "no_tracking_update", "durationDays": 7 }
+          ],
+          "reimbursementLogic": { "method": "wholesale", "reimbursementPercentage": 100 }
+        },
+        "deliveredButLost": {
+          "denialCondition": "Flexport provides valid POD."
+        },
+        "deliveredDamaged": {
+          "requiredEvidence": ["signedPodNotingDamage", "proofOfProductDamage"]
+        }
+      }
+    }
+  }
+}
