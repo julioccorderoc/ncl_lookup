@@ -1,3 +1,131 @@
 {
-  "test": null
+  "version": "1.1",
+  "lastUpdated": "2023-10-27T11:00:00Z",
+  "principles": {
+    "shopifyRole": {
+      "type": "conduit",
+      "description": "Shopify provides the platform for dispute resolution but does not make decisions.",
+      "decisionMaker": "issuingBank"
+    }
+  },
+  "definitions": {
+    "inquiry": {
+      "description": "A preliminary request for information from a cardholder's bank.",
+      "financialImpact": "No funds are withdrawn during the inquiry phase."
+    },
+    "chargeback": {
+      "description": "A formal funds reversal initiated by the cardholder's bank.",
+      "financialImpact": "Disputed amount and a fee are immediately withdrawn."
+    }
+  },
+  "processFlows": {
+    "chargeback": {
+      "name": "Chargeback Process",
+      "responseWindowDays": [7, 21],
+      "reviewTimeframeDays": 75,
+      "steps": [
+        { "step": 1, "action": "Cardholder disputes charge." },
+        { "step": 2, "action": "Bank withdraws funds and fee." },
+        { "step": 3, "action": "Agent receives evidence request via Shopify Admin." },
+        { "step": 4, "action": "Agent submits evidence before deadline." },
+        { "step": 5, "action": "Issuing bank reviews evidence." },
+        { "step": 6, "action": "Issuing bank makes final decision." }
+      ],
+      "outcomes": {
+        "win": "Disputed amount is returned. Fee may be refunded.",
+        "partialWin": "Part of the disputed amount is returned. Fee may be refunded.",
+        "loss": "Funds and fee are not returned. Decision is final."
+      }
+    },
+    "inquiry": {
+      "name": "Inquiry Process",
+      "reviewTimeframeDays": [65, 75],
+      "steps": [
+        { "step": 1, "action": "Cardholder disputes charge." },
+        { "step": 2, "action": "Bank sends inquiry request. No funds withdrawn." },
+        { "step": 3, "action": "Agent receives evidence request via Shopify Admin." },
+        { "step": 4, "action": "Agent submits evidence or resolves with customer." },
+        { "step": 5, "action": "Issuing bank reviews evidence." },
+        { "step": 6, "action": "Issuing bank resolves inquiry." }
+      ],
+      "outcomes": {
+        "closedInFavor": "Case is closed with no financial impact.",
+        "escalatedToChargeback": "Inquiry becomes a full chargeback. Funds and fee are now withdrawn."
+      }
+    }
+  },
+  "responseStrategies": {
+    "fight": {
+      "name": "Fight the Dispute",
+      "description": "Submit evidence to prove the charge was valid.",
+      "evidenceFormattingRules": [
+        "Use high-contrast, black-and-white-friendly documents (PDFs recommended).",
+        "Ensure all submitted documents are clearly legible without zooming or cropping.",
+        "Do not use external links as evidence."
+      ]
+    },
+    "resolveWithCustomer": {
+      "name": "Resolve with Customer",
+      "description": "Convince the customer to withdraw the dispute with their bank.",
+      "criticalWarning": "Do NOT issue a refund until the chargeback is officially marked as won/canceled in the Shopify Admin. This can take 30-90 days.",
+      "withdrawalLetterRequirements": [
+        "Must be on official bank letterhead.",
+        "Must display the chargeback case number.",
+        "Must confirm original charge date and amount.",
+        "Must confirm your store/business name.",
+        "Must confirm the chargeback has been canceled.",
+        "Must confirm funds were re-debited from the customer and returned to you."
+      ]
+    },
+    "accept": {
+      "name": "Accept the Dispute",
+      "description": "Concede the dispute when it is deemed valid.",
+      "procedures": {
+        "onChargeback": "Take no action. Do not submit evidence.",
+        "onInquiry": "Issue a FULL refund for the order to prevent escalation. Submit proof of the full refund as evidence."
+      }
+    }
+  },
+  "disputeReasons": {
+    "fraudulent": {
+      "description": "Cardholder claims they did not authorize the charge.",
+      "requiredEvidence": ["shopifyFraudAnalysis", "proofOfDelivery_with_tracking", "customerBillingInfo", "customerIpAddress", "orderTimestamp", "customerCommunications"],
+      "recommendedCustomerAction": "Contact customer to check if a family member made the purchase or if they've forgotten. If they agree the charge is valid, instruct them to call their bank to drop the chargeback."
+    },
+    "unrecognized": {
+      "description": "Cardholder doesn't recognize the merchant name on their statement.",
+      "requiredEvidence": ["shopifyFraudAnalysis", "proofOfDelivery_with_tracking", "customerBillingInfo", "customerIpAddress", "orderTimestamp", "customerCommunications"],
+      "recommendedCustomerAction": "Contact customer to remind them of their purchase from your store. If they agree, instruct them to call their bank to drop the chargeback."
+    },
+    "duplicate": {
+      "description": "Cardholder believes they were charged twice for the same item.",
+      "requiredEvidence": ["transactionReceipts_for_both_charges", "explanationOfSeparateCharges", "customerCommunications"],
+      "recommendedCustomerAction": "Contact customer to explain the two charges were for separate items/services. If you made an error, accept the chargeback."
+    },
+    "subscription_canceled": {
+      "description": "Cardholder was charged after they believed their subscription was canceled.",
+      "requiredEvidence": ["subscriptionCancellationPolicy", "proofOfPolicyAcceptance", "cancellationConfirmationEmail", "customerServiceCommunications", "productAccessLogs_postCancellationDate"],
+      "recommendedCustomerAction": "Contact customer to clarify the billing cycle versus their cancellation date. If you made an error, accept the chargeback."
+    },
+    "product_not_received": {
+      "description": "Cardholder claims they never received the product/service.",
+      "requiredEvidence": ["proofOfDelivery_with_tracking", "shippingConfirmationEmail", "customerBillingInfo", "orderFulfillmentTimestamp", "productAccessLogs_forDigitalGoods"],
+      "recommendedCustomerAction": "Contact customer to check delivery status with them and investigate with the carrier. If resolved, instruct them to call their bank to drop the chargeback."
+    },
+    "product_unacceptable": {
+      "description": "Product was defective, damaged, or not as described.",
+      "requiredEvidence": ["productPagePhotos_and_descriptions", "proofOfDelivery_with_tracking", "returnPolicy", "customerCommunications_showingResolutionAttempt"],
+      "recommendedCustomerAction": "Contact customer to resolve the issue via your return/replacement policy. If they agree to drop the chargeback, obtain a withdrawal letter."
+    },
+    "credit_not_processed": {
+      "description": "Cardholder returned an item but was not refunded.",
+      "requiredEvidence": ["returnPolicy", "refundPolicy", "customerCommunications_aboutReturn", "explanationWhyRefundWasNotDue"],
+      "recommendedCustomerAction": "Contact customer to explain the status of their return/refund according to your policy. You cannot issue a refund while a chargeback is active."
+    },
+    "general": {
+      "description": "A catch-all category for other dispute reasons.",
+      "requiredEvidence": ["all_relevant_evidence", "customerCommunications", "proofOfDelivery_with_tracking", "customerBillingInfo", "orderFulfillmentTimestamp"],
+      "recommendedCustomerAction": "Contact customer immediately to understand the core issue. This is an information-gathering step."
+    }
+  }
 }
