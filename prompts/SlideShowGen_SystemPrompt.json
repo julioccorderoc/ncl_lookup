@@ -86,6 +86,20 @@
         "type": "string",
         "description": "Short summary of the carousel's story and purpose. It should cover the arc in max 3 sentences."
       },
+      "unavoidable_keywords": {
+        "type": "array",
+        "description": "A list of critical, high-impact keywords extracted from the source material that MUST be included in the text overlays to ensure clarity and impact. This directly addresses the core topic.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "provocative_visual_anchors": {
+        "type": "array",
+        "description": "A list of non-negotiable, often controversial or graphic visual elements extracted from the source that MUST be depicted in the scene briefs to maximize attention.",
+        "items": {
+          "type": "string"
+        }
+      },
       "aspect_ratio": {
         "type": "string",
         "description": "A simple string (like '1:1' or '9:16') to indicate the aspect ratio desired for the slide."
