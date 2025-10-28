@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CarouselBlueprint",
+  "description": "A schema for creating visually consistent and narratively coherent image carousels. It separates the global visual identity and character definitions from the slide-specific scene direction to ensure consistency and creative control.",
+  "type": "object",
+  "properties": {
+    "carousel_name": {
+      "type": "string",
+      "description": "A unique, snake_case identifier for the carousel project. Used for organization and file naming. Use from 1 to 3 words."
+    },
+    "content_brief": {
+      "type": "string",
+      "description": "Short summary of the carousel's story and purpose. It should cover the arc in max 3 sentences."
+    },
+    "unavoidable_keywords": {
+      "type": "array",
+      "description": "A list of critical, high-impact keywords extracted from the source material that MUST be included in the text overlays to ensure clarity and impact. This directly addresses the core topic.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provocative_visual_anchors": {
+      "type": "array",
+      "description": "A list of non-negotiable, often controversial or graphic visual elements extracted from the source that MUST be depicted in the scene briefs to maximize attention.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aspect_ratio": {
+      "type": "string",
+      "description": "A simple string (like '1:1' or '9:16') to indicate the aspect ratio desired for the slide."
+    },
+    "visual_identity": {
+      "type": "object",
+      "description": "The Visual Constitution. Defines the global artistic rules that apply to every slide, ensuring a cohesive look and feel.",
+      "properties": {
+        "style_name": {
+          "type": "string",
+          "enum": [
+            "Children's book",
+            "Rick and Morty",
+            "Japanese Anime",
+            "Kawuaii",
+            "Ghibli",
+            "Comic Book",
+            "Phone Camera"
+          ],
+          "description": "The name of the style, this is always clearly defined in the input."
+        },
+        "art_style_description": {
+          "type": "string",
+          "description": "The core prompt defining the artistic medium (e.g., 'digital illustration in a gentle webcomic style', 'ultra-realistic smartphone photography')."
+        },
+        "color_palette_description": {
+          "type": "string",
+          "description": "Defines the mood and rules for color usage (e.g., 'A warm, desaturated palette dominated by creams, soft oranges, and muted browns')."
+        },
+        "lighting_rules": {
+          "type": "string",
+          "description": "The default approach to lighting across all slides (e.g., 'Soft, environmental lighting from identifiable sources', 'Harsh, direct on-camera flash')."
+        },
+        "composition_rules": {
+          "type": "string",
+          "description": "General framing guidelines for the entire carousel (e.g., 'Favor medium shots and close-ups to focus on emotion', 'Use a centered, symmetrical composition')."
+        }
+      },
+      "required": [
+        "style_name",
+        "art_style_description",
+        "color_palette_description",
+        "lighting_rules",
+        "composition_rules"
+      ]
+    },
+    "character_roster": {
+      "type": "array",
+      "description": "The Cast of Characters. A central repository for defining characters to ensure visual consistency across all slides.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "character_name": {
+            "type": "string",
+            "description": "A simple, memorable name used to reference this character in each slide's 'scene_brief'."
+          },
+          "character_description": {
+            "type": "string",
+            "description": "A highly specific, repeatable prompt describing the character's permanent physical features. This is the key to consistency (e.g., 'A simple, cute, moon-faced female character with large, expressive black eyes, no visible nose, and soft pink blush circles on her cheeks')."
+          }
+        },
+        "required": [
+          "character_name",
+          "character_description"
+        ]
+      }
+    },
+    "slides": {
+      "type": "array",
+      "description": "An array of slide objects, each defining a single frame in the carousel's narrative sequence.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slide_number": {
+            "type": "integer",
+            "description": "The sequential order of the slide in the carousel."
+          },
+          "purpose": {
+            "type": "string",
+            "description": "The strategic marketing or narrative goal of this specific slide (e.g., 'Hook the user with a shared secret', 'Agitate the problem by showing its consequences')."
+          },
+          "core_message": {
+            "type": "string",
+            "description": "The single, most important idea or feeling this slide must communicate to the viewer."
+          },
+          "text_overlay": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "The exact text to be displayed on the image. Use '\\n' for line breaks. Can be null for visual-only slides."
+          },
+          "scene_brief": {
+            "type": "object",
+            "description": "The Director's Shot List. Contains all the specific instructions for generating the visual for this single slide.",
+            "properties": {
+              "setting": {
+                "type": "string",
+                "description": "A brief description of the environment or location (e.g., 'A dark bedroom at night', 'A brightly lit bathroom')."
+              },
+              "characters_present": {
+                "type": "array",
+                "description": "An array of 'character_name's from the top-level roster who appear in this scene.",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "subject_action": {
+                "type": "string",
+                "description": "What the character(s) are physically doing in the scene (e.g., 'Lila sits on the bed, clutching her bloated stomach')."
+              },
+              "emotion_to_convey": {
+                "type": "string",
+                "description": "The specific feeling the image must evoke, guiding character expression and overall mood (e.g., 'Profound loneliness and resignation', 'Physical discomfort and pain')."
+              },
+              "camera_shot": {
+                "type": "string",
+                "description": "A directorial command for framing the scene (e.g., 'Medium shot', 'Extreme close-up on her face')."
+              },
+              "scene_specific_details": {
+                "type": "string",
+                "description": "Any unique objects, props, or lighting details crucial to this scene that aren't covered by global rules (e.g., 'A digital clock on the nightstand glows with the time 3:17')."
+              }
+            },
+            "required": [
+              "setting",
+              "characters_present",
+              "subject_action",
+              "emotion_to_convey",
+              "camera_shot",
+              "scene_specific_details"
+            ]
+          }
+        },
+        "required": [
+          "slide_number",
+          "purpose",
+          "core_message",
+          "text_overlay",
+          "scene_brief"
+        ]
+      }
+    }
+  },
+  "required": [
+    "carousel_name",
+    "content_brief",
+    "unavoidable_keywords",
+    "provocative_visual_anchors",
+    "aspect_ratio",
+    "visual_identity",
+    "character_roster",
+    "slides"
+  ]
+}
