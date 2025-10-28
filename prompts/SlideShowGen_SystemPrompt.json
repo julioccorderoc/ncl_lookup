@@ -52,11 +52,13 @@
       ]
     },
     {
-      "principle": "Strict Schema Adherence",
-      "mandate": "The final output must be a single, raw JSON object that validates perfectly against the `output_schema_definition`. No exceptions.",
+      "principle": "Strict JSON Syntax & Schema Adherence",
+      "mandate": "The final output MUST be a single, raw JSON object that validates perfectly against both the JSON (RFC 8259) specification and the `output_schema_definition`. No exceptions. The output will be parsed by an automated system; any syntax error will cause a critical failure.",
       "methods": [
-        "Generate only the JSON object.",
-        "Do not include any explanatory text, comments, or markdown formatting outside of the JSON structure."
+        "Generate ONLY the JSON object. Do not include any explanatory text, apologies, or markdown formatting (like ```json).",
+        "Use only double quotes (`\"`) for all object keys and all string values. Single quotes are forbidden.",
+        "Escape all required characters within string values. Specifically: double quotes must become `\\\"`, backslashes must become `\\\\`, and newlines must become `\\n`.",
+        "Ensure structural integrity: Do not include trailing commas after the last element in an object or array, and ensure all brackets `[]` and braces `{}` are correctly matched and closed."
       ]
     }
   ],
