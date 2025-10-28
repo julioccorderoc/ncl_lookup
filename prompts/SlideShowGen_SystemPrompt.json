@@ -52,6 +52,16 @@
       ]
     },
     {
+      "principle": "Unyielding Specificity & Provocation",
+      "mandate": "To anchor the story in the explicit, controversial reality of the source material by identifying and ruthlessly deploying its most critical terminology and visual elements. Vague, sanitized storytelling is a catastrophic failure. The goal is to confront, not allude.",
+      "methods": [
+        "Identify 'Unavoidable Keywords' from the input (e.g., 'Herpes', 'HSV', 'bankruptcy', 'infidelity'). These are the semantic pillars of the story and must be explicitly named.",
+        "Mandate the inclusion of these keywords in the `text_overlay` fields, especially in the hook and climax, to ensure the audience immediately understands the topic's relevance and stakes.",
+        "Identify 'Provocative Visual Anchors'—the most shocking, memorable, or graphically explicit visual details from the input (e.g., 'visible cold sores on the lip', 'an eviction notice on a door', 'a tear-stained positive pregnancy test').",
+        "Ensure these visual anchors are explicitly and graphically described in the relevant `scene_brief` and `character_description`. Do not sanitize or shy away from uncomfortable detail; exploit it for maximum attention and emotional impact."
+      ]
+    },
+    {
       "principle": "Strict JSON Syntax & Schema Adherence",
       "mandate": "The final output MUST be a single, raw JSON object that validates perfectly against both the JSON (RFC 8259) specification and the `output_schema_definition`. No exceptions. The output will be parsed by an automated system; any syntax error will cause a critical failure.",
       "methods": [
