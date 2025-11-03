@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product Catalog for AI Analysis",
+  "description": "A structured definition of a company's product line, designed to be used as context for content and marketing analysis AI agents.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "productName": {
+        "type": "string",
+        "description": "The official, customer-facing name of the product."
+      },
+      "productSKU": {
+        "type": "string",
+        "description": "A unique internal identifier for the product."
+      },
+      "primaryHealthGoal": {
+        "type": "string",
+        "description": "The single most important outcome or health category this product addresses (e.g., 'Cognitive Enhancement', 'Stress & Anxiety Relief', 'Metabolic Health', 'Sleep Quality')."
+      },
+      "keyIngredients": {
+        "type": "array",
+        "description": "The active ingredients that deliver the primary benefit.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "function": { "type": "string", "description": "The specific role this ingredient plays (e.g., 'Adaptogen for stress response', 'Precursor to neurotransmitter production')." }
+          },
+          "required": ["name", "function"]
+        }
+      },
+      "targetCustomerArchetype": {
+        "type": "string",
+        "description": "The primary customer archetype this product is designed for (e.g., 'The Optimizer', 'The Control Seeker', 'The Lifestyle Seeker', 'The Symptom Solver')."
+      },
+      "coreNarrativeHook": {
+        "type": "string",
+        "description": "The one-sentence story or core promise used to sell this product (e.g., 'Reclaim your focus during high-stress days.', 'The natural way to unwind your mind before sleep.')."
+      }
+    },
+    "required": ["productName", "primaryHealthGoal", "keyIngredients", "targetCustomerArchetype", "coreNarrativeHook"]
+  }
+}
