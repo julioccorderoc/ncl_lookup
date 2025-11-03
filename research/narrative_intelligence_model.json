@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Narrative Landscape Intelligence",
+  "description": "A synthesized and normalized dataset defining the brand narratives, competitive positioning, and strategic opportunities in the glucose control supplement market.",
+  "type": "object",
+  "properties": {
+    "marketSummary": {
+      "type": "object",
+      "description": "A high-level strategic summary of the narrative landscape.",
+      "properties": {
+        "thesis": {
+          "type": "string",
+          "description": "The core strategic thesis explaining how brand stories shape this market."
+        },
+        "keyFindings": {
+          "type": "array",
+          "description": "The most critical, high-level takeaways from the narrative analysis.",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "narrativeLandscape": {
+      "type": "array",
+      "description": "An analysis of the dominant, recurring brand stories in the market.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "narrativeName": { "type": "string" },
+          "description": { "type": "string" },
+          "leadingProponents": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["narrativeName", "description", "leadingProponents"]
+      }
+    },
+    "strategicOpportunities": {
+      "type": "array",
+      "description": "Actionable strategic gaps and vulnerabilities identified in the narrative landscape.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "opportunityDescription": { "type": "string" },
+          "executionBlueprint": { "type": "string" }
+        },
+        "required": ["title", "opportunityDescription", "executionBlueprint"]
+      }
+    },
+    "competitorMatrix": {
+      "type": "array",
+      "description": "A normalized, at-a-glance comparison of each competitor's narrative architecture.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "brandName": { "type": "string" },
+          "corePromise": { "type": "string" },
+          "brandArchetype": { "type": "string" },
+          "declaredEnemy": { "type": "string" },
+          "targetCustomerArchetype": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["brandName", "corePromise", "brandArchetype", "declaredEnemy", "targetCustomerArchetype"]
+      }
+    }
+  },
+  "required": ["marketSummary", "narrativeLandscape", "strategicOpportunities", "competitorMatrix"]
+}
