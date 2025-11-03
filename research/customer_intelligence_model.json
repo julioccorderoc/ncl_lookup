@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Glucose Control Market Intelligence",
+  "description": "A synthesized and normalized dataset defining the customer landscape and strategic opportunities for the glucose control supplement market.",
+  "type": "object",
+  "properties": {
+    "marketOverview": {
+      "type": "object",
+      "description": "A high-level strategic summary of the market's fundamental dynamics.",
+      "properties": {
+        "thesis": {
+          "type": "string",
+          "description": "The core strategic thesis explaining how the market functions."
+        },
+        "primaryAxes": {
+          "type": "array",
+          "description": "The fundamental consumer motivations that segment the market.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "customerArchetypes": {
+      "type": "array",
+      "description": "A definitive list of the dominant, synthesized customer archetypes in the market.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The concise, descriptive name for the archetype."
+          },
+          "description": {
+            "type": "string",
+            "description": "A detailed profile of the archetype's mindset, motivations, and daily reality."
+          },
+          "coreMotivations": {
+            "type": "array",
+            "description": "The primary 'away from' pains and 'towards' aspirations driving this archetype.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "brandAffinity": {
+            "type": "string",
+            "description": "Which competitor brands resonate most with this archetype and the strategic reason why."
+          }
+        },
+        "required": ["name", "description", "coreMotivations", "brandAffinity"]
+      }
+    },
+    "painAspirationMatrix": {
+      "type": "array",
+      "description": "The universal human drivers of the market, distilled into fundamental pains and aspirations.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pain": {
+            "type": "string",
+            "description": "The 'Away From' motivation, framed as an emotional or physical frustration."
+          },
+          "aspiration": {
+            "type": "string",
+            "description": "The 'Towards' motivation, framed as a desired future state of being."
+          }
+        },
+        "required": ["pain", "aspiration"]
+      }
+    },
+    "strategicOpportunities": {
+      "type": "array",
+      "description": "A synthesized list of actionable strategic gaps in the current market.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "A concise name for the opportunity."
+          },
+          "gapDescription": {
+            "type": "string",
+            "description": "An explanation of the unserved customer, unclaimed narrative, or market inefficiency."
+          },
+          "strategicRecommendation": {
+            "type": "string",
+            "description": "A clear, actionable recommendation on how to capitalize on this opportunity."
+          }
+        },
+        "required": ["title", "gapDescription", "strategicRecommendation"]
+      }
+    },
+    "engagementTriggers": {
+      "type": "object",
+      "description": "The specific keywords and phrases that signal a potential customer is present in an online conversation.",
+      "properties": {
+        "primaryTriggers": {
+          "type": "array",
+          "description": "High-intent phrases indicating an immediate, unsolved problem.",
+          "items": { "type": "string" }
+        },
+        "secondaryTriggers": {
+          "type": "array",
+          "description": "Phrases indicating a search for validation or a longer-term health concern.",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["marketOverview", "customerArchetypes", "painAspirationMatrix", "strategicOpportunities", "engagementTriggers"]
+}
