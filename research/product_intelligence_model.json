@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Product Formulation Landscape Intelligence",
+  "description": "A synthesized and normalized dataset defining the formulation strategies, ingredient integrity, and competitive vulnerabilities in the glucose control supplement market.",
+  "type": "object",
+  "properties": {
+    "marketSummary": {
+      "type": "object",
+      "description": "A high-level strategic summary of the formulation landscape.",
+      "properties": {
+        "thesis": {
+          "type": "string",
+          "description": "The core strategic thesis explaining the dynamics of product formulation in this market."
+        },
+        "keyFindings": {
+          "type": "array",
+          "description": "The most critical, high-level takeaways from the analysis.",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "ingredientAnalysis": {
+      "type": "array",
+      "description": "A forensic breakdown of the key ingredients used across the market.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ingredientTier": {
+            "type": "string",
+            "enum": ["Hero Ingredients", "Workhorse Ingredients", "Supporting Botanicals", "Label Decoration"],
+            "description": "Classification of the ingredient's strategic role."
+          },
+          "ingredientName": { "type": "string" },
+          "mechanismOfAction": { "type": "string" },
+          "clinicalEvidence": { "type": "string" },
+          "doseReality": {
+            "type": "string",
+            "description": "A summary of how this ingredient is actually dosed by competitors versus the clinically effective range."
+          }
+        },
+        "required": ["ingredientTier", "ingredientName", "mechanismOfAction", "clinicalEvidence", "doseReality"]
+      }
+    },
+    "strategicLandscape": {
+      "type": "object",
+      "description": "An analysis of the overarching formulation strategies and market vulnerabilities.",
+      "properties": {
+        "formulationPhilosophies": {
+          "type": "array",
+          "description": "The distinct strategic clusters or approaches to product formulation.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "exemplarBrands": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "keyVulnerabilities": {
+          "type": "array",
+          "description": "Market-wide weaknesses that create strategic opportunities.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "vulnerability": { "type": "string" },
+              "description": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "competitorMatrix": {
+      "type": "array",
+      "description": "A normalized, at-a-glance comparison of each competitor's formulation strategy and integrity.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "productName": { "type": "string" },
+          "formulationStrategy": { "type": "string" },
+          "ingredientIntegrityScore": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "A 1-5 score of how well the formulation's dosages align with clinical evidence (1=Poor, 5=Excellent)."
+          },
+          "hasPatentedMoat": {
+            "type": "boolean",
+            "description": "True if the formula relies on patented/branded ingredients."
+          },
+          "primaryVulnerability": { "type": "string" }
+        },
+        "required": ["productName", "formulationStrategy", "ingredientIntegrityScore", "hasPatentedMoat", "primaryVulnerability"]
+      }
+    }
+  },
+  "required": ["marketSummary", "ingredientAnalysis", "strategicLandscape", "competitorMatrix"]
+}
