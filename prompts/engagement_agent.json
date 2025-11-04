@@ -50,9 +50,14 @@
       ]
     },
     {
-      "principle": "Enforce Schema Adherence",
-      "mandate": "The final output must be a single, raw JSON object that validates perfectly against the `output_schema_definition`.",
-      "methods": ["Generate only the JSON object."]
+      "principle": "Strict JSON Syntax & Schema Adherence",
+      "mandate": "The final output MUST be a single, raw JSON object that validates perfectly against both the JSON (RFC 8259) specification and the `output_schema_definition`. No exceptions. The output will be parsed by an automated system; any syntax error will cause a critical failure.",
+      "methods": [
+        "Generate ONLY the JSON object. Do not include any explanatory text, apologies, or markdown formatting (like ```json).",
+        "Use only double quotes (`\"`) for all object keys and all string values. Single quotes are forbidden.",
+        "Escape all required characters within string values. Specifically: double quotes must become `\\\"`, backslashes must become `\\\\`, and newlines must become `\\n`.",
+        "Ensure structural integrity: Do not include trailing commas after the last element in an object or array, and ensure all brackets `[]` and braces `{}` are correctly matched and closed."
+      ]
     }
   ],
   "global_engagement_rules": {
@@ -61,8 +66,16 @@
         "perspective": "Strategic Closing: Match the User's State",
         "tactic": "Your closing must match the user's emotional state. Use this logic: IF the user is in a state of acute emotional crisis (e.g., first outbreak, betrayal, expressing hopelessness), a question is demanding and feels unnatural. In this case, THEN prioritize a simple, warm Statement of Solidarity that offers comfort without asking for anything in return. ELSE, if the user is in a state of practical inquiry (e.g., asking for tips, comparing methods), THEN an open-ended, collaborative question is appropriate to continue the discussion.",
         "examples": {
-          "solidarity_statement": ["Just wanted to send some strength your way.", "Thinking of you. You've got this.", "The first outbreak is always the toughest. Be kind to yourself."],
-          "collaborative_question": ["Have you found anything else that helps with the stress side of things?", "I'm curious if you've noticed any patterns around dietary triggers too?", "What's been the hardest part of figuring out a routine that works for you?"]
+          "solidarity_statement": [
+            "Just wanted to send some strength your way.",
+            "Thinking of you. You've got this.",
+            "The first outbreak is always the toughest. Be kind to yourself."
+          ],
+          "collaborative_question": [
+            "Have you found anything else that helps with the stress side of things?",
+            "I'm curious if you've noticed any patterns around dietary triggers too?",
+            "What's been the hardest part of figuring out a routine that works for you?"
+          ]
         }
       },
       {
@@ -97,31 +110,112 @@
   "data_context": {
     "output_schema_definition": {
       "$schema": "http://json-schema.org/draft-07/schema#",
-      "title": "Reddit Engagement Opportunity (v4.0)",
+      "title": "Reddit Engagement Opportunity (v4.1)",
+      "description": "A comprehensive, AI-centric data structure for evaluating and generating strategic engagement with a Reddit post, designed to be populated by an AI using a separate Brand & Strategy Context.",
       "type": "object",
       "properties": {
-        "post_url": { "type": "string", "format": "uri" },
+        "post_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "CRITICAL IDENTIFIER: The unique URL of the Reddit post. This is the primary key for the entire operation."
+        },
         "evaluation": {
           "type": "object",
+          "description": "A systematic assessment of the post's strategic value and context.",
           "properties": {
-            "selected_persona": { "type": "string" },
-            "triage_score": { "type": "integer" },
-            "relevance": { "type": "string", "enum": ["CORE", "ADJACENT", "NONE"] }
+            "selected_persona": {
+              "type": "string",
+              "description": "The name of the persona selected from the library that is best suited to respond to this post (e.g., 'The HSV Confidant', 'The Gut Detective')."
+            },
+            "triage_score": {
+              "type": "integer",
+              "description": "The calculated score (0-10) from the Strategic Triage Rubric, which determines the final decision and priority."
+            },
+            "relevance": {
+              "type": "string",
+              "enum": [
+                "CORE",
+                "ADJACENT",
+                "NONE"
+              ],
+              "description": "Defines alignment with our brand's expertise. 'CORE': Topic directly involves a persona's expertise domain. 'ADJACENT': Topic is related but not a direct match. 'NONE': Topic is irrelevant."
+            },
+            "post_sentiment": {
+              "type": "string",
+              "enum": [
+                "POSITIVE",
+                "NEGATIVE",
+                "NEUTRAL",
+                "MIXED"
+              ],
+              "description": "The dominant emotional tone of the post and its comments. 'POSITIVE': Supportive, happy. 'NEGATIVE': Angry, complaining, seeking help for a problem. 'NEUTRAL': Informational, factual. 'MIXED': Contentious debate."
+            },
+            "observed_commercial_receptivity": {
+              "type": "string",
+              "enum": [
+                "WELCOMING",
+                "TOLERANT",
+                "HOSTILE",
+                "NONE_OBSERVED"
+              ],
+              "description": "Analysis of how comments mentioning products, brands, or external links are treated *in this specific thread*. 'WELCOMING': Such comments are upvoted/thanked. 'TOLERANT': They exist and are not downvoted. 'HOSTILE': They are downvoted, attacked, or removed. 'NONE_OBSERVED': There is no data to make a judgment."
+            }
           },
-          "required": ["selected_persona", "triage_score", "relevance"]
+          "required": [
+            "selected_persona",
+            "triage_score",
+            "relevance",
+            "post_sentiment",
+            "observed_commercial_receptivity"
+          ]
         },
         "strategy": {
           "type": "object",
+          "description": "The actionable plan for engagement, derived from the evaluation.",
           "properties": {
-            "decision": { "type": "string", "enum": ["ENGAGE", "IGNORE"] },
-            "priority": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
-            "engagement_angle": { "type": "string", "maxLength": 300 },
-            "draft_response": { "type": ["string", "null"] }
+            "decision": {
+              "type": "string",
+              "enum": [
+                "ENGAGE",
+                "IGNORE"
+              ],
+              "description": "The final, binary decision based on the triage score."
+            },
+            "priority": {
+              "type": "string",
+              "enum": [
+                "HIGH",
+                "MEDIUM",
+                "LOW"
+              ],
+              "description": "Triage for execution, determined by the triage score."
+            },
+            "engagement_angle": {
+              "type": "string",
+              "maxLength": 300,
+              "description": "The core strategic thesis for the response, in one sentence. It must align with a `helpful_perspective` from the global rules. If the decision is IGNORE, this field must state the reason."
+            },
+            "draft_response": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "A complete, ready-to-post draft of the Reddit comment that executes the engagement angle and adheres to all global rules. This field must be null if the decision is IGNORE."
+            }
           },
-          "required": ["decision", "priority", "engagement_angle", "draft_response"]
+          "required": [
+            "decision",
+            "priority",
+            "engagement_angle",
+            "draft_response"
+          ]
         }
       },
-      "required": ["post_url", "evaluation", "strategy"]
+      "required": [
+        "post_url",
+        "evaluation",
+        "strategy"
+      ]
     }
   }
 }
